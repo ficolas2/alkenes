@@ -1,5 +1,5 @@
-%chk=C:\Users\practica\g\ISO5-base3.chk
-# opt freq=noraman hf/cc-pvdz geom=connectivity
+%chk=C:\Users\practica\g\ISO5-base2.chk
+# opt freq=noraman hf/631G(d,p) geom=connectivity
 
 Title Card Required
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 bases = ["6-31G", "6-31G(d)", "631G(d,p)", "cc-pvdz", "cc-pvtz"]
 
 for i_isomer in range(1, 7):
@@ -8,6 +10,6 @@ for i_isomer in range(1, 7):
             modified_lines[0] = f"%chk=C:\\Users\\practica\\g\\ISO{i_isomer}-base{i_base}.chk\n"
             modified_lines[1] = f"# opt freq=noraman hf/{base} geom=connectivity\n"
 
-            with open(f"output/ISO{i_isomer}-base{i_base}.gjf", "w") as f_out:
+            with open(f"output/ISO{i_isomer}-base{i_base+1}.gjf", "w") as f_out:
                 f_out.writelines(modified_lines)
 
